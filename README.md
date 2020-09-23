@@ -25,7 +25,7 @@ After scraping the data, I needed to clean it in order to generate a word cloud 
 # WordCloud
 I defined a custom list of stop words to try and isolate unique words that artists may use. I then utilized the WordCloud library and fed it my processed lyrics list to generate a word cloud. Below are the results for 5 songs belonging to the artist NF.
 
-*image placeholder*
+![alt text](https://github.com/nkrajew/lyrics_wordcloud/blob/master/images/NF_wordcloud.png "NF Word Cloud")
 
 # Potential Next Steps
 1. Utilize the Genius API to make requests to artists then scrape their songs
