@@ -11,3 +11,24 @@
 
 ## Data Sources
 Genius Lyrics - https://genius.com/
+
+## Web Scraping
+Tweaked the web scraper code from  John Miller (link above) to scrape select song lyrics from genius.com. Each request yielded a string of preprocessed lyrics.
+
+# Data Cleaning/Processing
+After scraping the data, I needed to clean it in order to generate a word cloud from it. Here are the steps I took:
+1. Split the string to create a list of words
+2. Iterate through each word and remove punctuation, special characters, and numbers
+3. Remove words that tagged sections of the song (e.g. chorus)
+4. Removed any empty strings from the list of words
+
+# WordCloud
+I defined a custom list of stop words to try and isolate unique words that artists may use. I then utilized the WordCloud library and fed it my processed lyrics list to generate a word cloud. Below are the results for 5 songs belonging to the artist NF.
+
+*image placeholder*
+
+# Potential Next Steps
+1. Utilize the Genius API to make requests to artists then scrape their songs
+    - Better yet, utilize the library by John W. Miller (https://www.johnwmillr.com/scraping-genius-lyrics/)
+2. Try to extract themes from an artists songs
+3. Split an artist's songs into to 2 (past and present) to see how their words/themes have changed
